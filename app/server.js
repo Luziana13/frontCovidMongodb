@@ -2,7 +2,7 @@ const express = require('express');
 const BodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
-const route = require("./api/routes/index.routes");
+const route = require("../api/routes/index.routes");
 
 
 var corsOptions = {
@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to bezkoder application." });
 });
 
-const db = require("./api/models");
+const db = require("../api/models");
 db.mongoose
     .connect(db.url, {
         useNewUrlParser: true,
