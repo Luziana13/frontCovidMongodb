@@ -2,6 +2,7 @@ const express = require('express');
 const BodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
+//route
 const route = require("./api/routes/index.routes");
 
 
